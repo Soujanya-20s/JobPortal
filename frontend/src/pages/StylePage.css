@@ -1,0 +1,179 @@
+
+.auth-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 15px;
+}
+
+.auth-box {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.dashboard-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-card {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.job-card .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.job-card .card-text {
+  font-size: 1rem;
+}
+
+
+.navbar {
+  background-color: #001F3F;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+.nav-link:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+
+.logout-button {
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0;
+}
+
+.logout-button:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 40px;
+  padding: 20px;
+}
+
+.home-container img {
+  width: 400px;
+  height: auto;
+  border-radius: 8px; 
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+
+
+/* Responsive Navbar for Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-link, .logout-button {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  .home-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .home-container img {
+    width: 90%; /* Make image responsive */
+    max-width: 300px;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+}
